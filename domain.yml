@@ -1,0 +1,45 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - movie_genre
+
+entities: 
+  - genre
+
+responses:
+  utter_greet:
+  - text: "Hello! ^_^"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_second:
+  - text: "Would you like another suggestion?"
+
+  utter_enjoy:
+  - text: "Enjoy your movie!"
+
+  utter_goodbye:
+  - text: "Ok bye! :("
+
+  utter_genre_chosen:
+  - text: "You have chosen {genre} as your genre of choice."
+
+  utter_unknown_genre:
+  - text: "I am sorry, but I do not know this genre."
+
+  utter_ask_genre:
+  - text: "What genre of movie would you like to watch?"
+
+
+actions:
+  - action_genre_entity
+  - action_movie_choice
+
+session_config:
+  session_expiration_time: 30
+  carry_over_slots_to_new_session: true
