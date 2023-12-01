@@ -1,0 +1,39 @@
+version: "3.1"
+
+stories:
+
+- story: simple movie
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: action_movie_choice
+  - intent: movie_genre
+  - action: action_genre_entity
+  - action: utter_did_that_help
+
+- story: good
+  steps:
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_enjoy
+
+- story: not good
+  steps:
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_second
+
+- story: second suggestion accept
+  steps:
+  - action: utter_second
+  - intent: affirm
+  - action: action_movie_choice
+  - intent: movie_genre
+  - action: action_genre_entity
+  - action: utter_did_that_help
+
+- story: second suggestion deny
+  steps:
+  - action: utter_second
+  - intent: deny
+  - action: utter_goodbye

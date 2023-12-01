@@ -1,0 +1,85 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - yes please
+    - correct
+    - thanks
+    - thank you
+    - ty
+    - thanx
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - no I don't
+
+- intent: movie_genre
+  examples: |
+    - [horror](genre)
+    - [comedy](genre)
+    - [romance](genre)
+    - [sci-fi](genre)
+    - [science fiction](genre)
+    - [fantasy](genre)
+    - [supernatural](genre)
+    - [thriller](genre)
+    - [action](genre)
+    - [adventure](genre)
+    - [animation](genre)
+    - [cartoon](genre)
+    - [family](genre)
+    - [drama](genre)
+    - [tragedy](genre)
+    - [classic](genre)
+    - [cult](genre)
+    - [silent](genre)
+    - [80s](genre)
+    - [musical](genre)
+    - [coming of age](genre)
+    - [rom-com](genre)
+    - [teen flick](genre)
+    - [classic](genre)
+    - [biography](genre)
+    - [cult](genre)
