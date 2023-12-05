@@ -7,12 +7,11 @@ stories:
   - user: |
       hello there!
     intent: greet
-  - action: utter_movie
+  - action: utter_greet
   - user: |
       horror
     intent: genre
   - action: action_genre_entity
-  - action: utter_did_that_help
   - user: |
       yes
     intent: affirm
@@ -23,12 +22,11 @@ stories:
   - user: |
       hello there!
     intent: greet
-  - action: utter_movie
+  - action: utter_greet
   - user: |
       comedy
     intent: genre
   - action: action_genre_entity
-  - action: utter_did_that_help
   - user: |
       nope
     intent: deny
@@ -36,12 +34,11 @@ stories:
   - user: |
       yes please
     intent: affirm
-  - action: utter_movie
+  - action: utter_ask_genre
   - user: |
       comedy
     intent: genre
   - action: action_genre_entity
-  - action: utter_did_that_help
   - user: |
       yes
     intent: affirm
@@ -52,12 +49,11 @@ stories:
   - user: |
       hello there!
     intent: greet
-  - action: utter_movie
+  - action: utter_greet
   - user: |
       comedy
     intent: genre
   - action: action_genre_entity
-  - action: utter_did_that_help
   - user: |
       nope
     intent: deny
