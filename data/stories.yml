@@ -6,7 +6,6 @@ stories:
   steps:
   - intent: greet
   - action: utter_greet
-  - action: action_movie_choice
   - intent: movie_genre
   - action: action_genre_entity
   - action: utter_did_that_help
@@ -27,7 +26,7 @@ stories:
   steps:
   - action: utter_second
   - intent: affirm
-  - action: action_movie_choice
+  - action: utter_ask_genre
   - intent: movie_genre
   - action: action_genre_entity
   - action: utter_did_that_help
