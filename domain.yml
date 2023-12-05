@@ -9,36 +9,35 @@ intents:
 
 entities: 
   - genre
+  - movies
 
 responses:
   utter_greet:
-  - text: "Hello! ^_^"
+    - text: "Hello! What genre of movie would you like to watch?"
 
   utter_did_that_help:
-  - text: "Did that help you?"
+    - text: "Did that help you?"
 
   utter_second:
-  - text: "Would you like another suggestion?"
+    - text: "Would you like another suggestion?"
 
   utter_enjoy:
-  - text: "Enjoy your movie!"
+    - text: "Enjoy your movie!"
 
   utter_goodbye:
-  - text: "Ok bye! :("
-
-  utter_genre_chosen:
-  - text: "You have chosen {genre} as your genre of choice."
+    - text: "Ok bye! :("
 
   utter_unknown_genre:
-  - text: "I am sorry, but I do not know this genre."
+    - text: "I am sorry, but I do not know this genre."
 
   utter_ask_genre:
-  - text: "What genre of movie would you like to watch?"
+    - text: "What genre of movie would you like to watch?"
 
+  utter_movie_recommendation:
+  - text: "I recommend watching {movie}."
 
 actions:
   - action_genre_entity
-  - action_movie_choice
 
 session_config:
   session_expiration_time: 30
