@@ -8,17 +8,16 @@ stories:
   - action: utter_greet
   - intent: movie_genre
   - action: action_genre_entity
-  - action: utter_did_that_help
 
 - story: good
   steps:
-  - action: utter_did_that_help
+  - action: action_genre_entity
   - intent: affirm
   - action: utter_enjoy
 
 - story: not good
   steps:
-  - action: utter_did_that_help
+  - action: action_genre_entity
   - intent: deny
   - action: utter_second
 
@@ -29,7 +28,6 @@ stories:
   - action: utter_ask_genre
   - intent: movie_genre
   - action: action_genre_entity
-  - action: utter_did_that_help
 
 - story: second suggestion deny
   steps:
