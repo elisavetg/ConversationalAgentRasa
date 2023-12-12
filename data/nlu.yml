@@ -83,3 +83,8 @@ nlu:
     - [classic](genre)
     - [biography](genre)
     - [cult](genre)
+    - I want to watch a [coming of age](genre) movie
+    - I want a [classic](genre) 
+    - I want a [classic](genre) movie
+    - Suggest me a [family](genre) movie
+    - I'm in the mood for a [comedy](genre)
